@@ -1,11 +1,11 @@
 provider "google" {
-project = "qwiklabs-gcp-04-576cc70c1ddb"
-region = "us-west1"
+project = "demowithgcp"
+region = "us-central1"
 }
 
 resource "google_compute_instance" "myvm" {
 name = "myvm-dev"
-zone = "us-west1-c"
+zone = "us-central1-c"
 boot_disk {
 initialize_params {
   image = "debian-cloud/debian-9"
